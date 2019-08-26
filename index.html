@@ -4,7 +4,7 @@
 <head>
     <title>First Website</title>
     <style>
-        h1 {
+        .all {
             color: blue;
         }
 
@@ -12,82 +12,125 @@
             background-color: rgb(0, 0, 0);
         }
 
-        .list {
+        .one {
+            color: blue;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+        }
+
+        .two {
+            color: blue;
+            position: absolute;
+            top: 10%;
+            left: 30%;
+        }
+
+        .three {
+            color: blue;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+        }
+
+        .square {
+            background: rgb(116, 116, 116);
+            position: absolute;
+            top 10%;
+            width: 100%;
+            height: 65px;
+            border-radius: 20px;
+        }
+
+        .foru {
+            float: left;
+            margin-right: 10px;
+            margin-top: 8%;
+        }
+
+        .words {
+            margin-top: 10%;
+        }
+
+        #first {
             color: blue;
         }
 
-        #what-is-it {
+        #sec {
             color: blue;
         }
 
-        #history {
-            color: blue;
-        }
-
-        #learn {
-            color: blue;
-        }
-
-        .wow {
-            color: blue;
-        }
-
-        #whatt {
-            color: blue;
-        }
-
-        #historry {
-            color: blue;
-        }
-
-        #html {
-            color: blue;
-        }
-
-        #hunter {
+        #the {
             color: blue;
         }
 
         a {
             color: blue;
         }
+
+        .dday {
+            float: right;
+            margin-left: 12px;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Computer Programming!</h1>
-    <p id="hunter">By Hunter Ummels</p>
+
+
+
+    <h1 class="all">Computer Programming!</h1>
+
+    <div class="square">
+        <h3 class="one"><a href="#first">What Is It</a></h3>
+        <h3 class="two"><a href="#sec">The History</a></h3>
+        <h3 class="three"><a href="#the">What are the languages?</a></h3>
+    </div>
+    <div class="foru">
+        <img src="http://productiveinsights.com/wp-content/uploads/2013/12/Computer-Code-image-Depositphotos_15383137_m.jpg"
+            alt="Lines of code on a computer screen" width="190">
+    </div>
     <!-- list -->
-    <ul>
-        <li class="list"><a href="#whatt">What Is It</a></li>
-        <li class="list"><a href="#historry">The History</a></li>
-        <li class="list"><a href="#html">What Are The Languages?</a></li>
-    </ul>
-    <h2 id="whatt">What is it?</h2>
-    <p id="what-is-it">
-        Computer programming is the process of designing and building an executable computer program for accomplishing a
-        specific computing task. Programming involves tasks such as: analysis, generating algorithms, profiling
-        algorithms' accuracy and resource consumption, and the implementation of algorithms in a chosen programming
-        language (commonly referred to as coding). <br /> <a target="_blank"
-            href="https://en.wikipedia.org/wiki/Computer_programming">See more.</a></p>
 
-    <h2 id="historry">The History</h2>
-    <p id="history">The first high-level programming language was Plankalkül, created by Konrad Zuse between 1942 and
-        1945. The first high-level language to have an associated compiler was created by Corrado Böhm in 1951, for his
-        PhD thesis. The first commercially available language was FORTRAN; developed in 1956 by a team led by John
-        Backus at IBM. <br /> <a target="_blank"
-            href="https://en.wikipedia.org/wiki/History_of_programming_languages">See more.</a></p>
+    <div class="words">
+        <h2 id="first">What is Programming?</h2>
+        <p class="all">
+            "Computer programming is the process of designing and building an executable computer program for
+            accomplishing
+            a
+            specific computing task. Programming involves tasks such as: analysis, generating algorithms, profiling
+            algorithms' accuracy and resource consumption, and the implementation of algorithms in a chosen
+            programming
+            language (commonly referred to as coding)." <br /> <a target="_blank"
+                href="https://en.wikipedia.org/wiki/Computer_programming">See more.</a></p>
 
-    <h2 id="html">The Languages</h2>
-    <p id="learn">There are thousands of coding languages in existence today. Some of these are:</p>
-    <ul>
-        <li class="wow">JavaScript</li>
-        <li class="wow">Python</li>
-        <li class="wow">SQL</li>
-        <li class="wow">PHP</li>
-    </ul>
-    <p id="history">And many, many more. <br /> <a
-            href="https://www.codeconquest.com/what-is-coding/common-programming-languages/">See more.</a></p>
+        <h2 id="sec">The History</h2>
+        <div class="dday">
+            <img src="https://i.ytimg.com/vi/uoDdqYOwpR8/maxresdefault.jpg" alt="A Brief history of coding" width="250">
+        </div>
+        <p class="all">"The first high-level programming language was Plankalkül, created by Konrad Zuse between
+            1942
+            and
+            1945. The first high-level language to have an associated compiler was created by Corrado Böhm in 1951,
+            for
+            his
+            PhD thesis. The first commercially available language was FORTRAN; developed in 1956 by a team led by
+            John
+            Backus at IBM." <br /> <a target="_blank"
+                href="https://en.wikipedia.org/wiki/History_of_programming_languages">See more.</a></p>
+
+        <h2 id="the">The Languages</h2>
+        <p class="all">There are thousands of coding languages in existence today. Some of these are:</p>
+        <ul>
+            <li class="all">JavaScript</li>
+            <li class="all">Python</li>
+            <li class="all">SQL</li>
+            <li class="all">PHP</li>
+        </ul>
+        <p class="all">And many, many more. <br /> <a
+                href="https://www.codeconquest.com/what-is-coding/common-programming-languages/">See more.</a></p>
+    </div>
+
 </body>
 
 </html>
