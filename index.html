@@ -12,1204 +12,164 @@
 
     <style>
         body {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            background: rgb(168, 168, 168);
-            padding: 20%;
-        }
-
-        .site-title {
+            background-color: white;
             color: white;
-            background-color: rgb(58, 58, 58);
-            position: fixed;
-            left: -1%;
-            top: -3%;
-            padding-top: 2%;
-            padding-bottom: 2%;
-            padding-left: 7%;
-            padding-right: 94.6%;
-            z-index: 5;
+            font-family: sans-serif;
+            margin: 0;
+            text-align: center;
         }
 
-        @media screen and (max-width: 1382px) {
-            .site-title {
-                padding-bottom: 4%;
-                padding-top: 4%;
-            }
+		a {
+			text-decoration: none;
+			color: white;
+			background-color: rgb(53, 53, 53);
+			margin: 24px;
+			padding: 1%;
+		}
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin: 0;
+            line-height: 1.3;
         }
 
-        @media screen and (max-width: 793px) {
-            .site-title {
-                padding-bottom: 5%;
-                padding-top: 5%;
-            }
+        .wrapper {
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        @media screen and (max-width: 637px) {
-            .site-title {
-                padding-bottom: 6%;
-                padding-top: 6%;
-            }
+        .container {
+            padding: 24px;
         }
 
-        @media screen and (max-width: 534px) {
-            .site-title {
-                padding-bottom: 7%;
-                padding-top: 7%;
-            }
+        #aus {
+            font-size: 2.5rem;
         }
 
-
-        .about-us {
-            color: white;
-            position: fixed;
-            top: 4%;
-            right: 20%;
-            z-index: 5;
-            margin-right: 2%;
-            margin-left: 2%;
+        p {
+            font-size: 1.3rem;
         }
 
-        @media screen and (max-width: 1382px) {
-            .about-us {
-                top: 6.5%;
-                right: 23%;
-            }
-        }
-
-        @media screen and (max-width: 1160px) {
-            .about-us {
-                top: 5.5%;
-            }
-        }
-
-        @media screen and (max-width: 1020px) {
-            .about-us {
-                top: 5%;
-                right: 25%;
-            }
-        }
-
-        @media screen and (max-width: 910px) {
-            .about-us {
-                top: 4.5%;
-                right: 26%;
-            }
-        }
-
-        @media screen and (max-width: 793px) {
-            .about-us {
-                right: 28%;
-                font-size: 90%;
-                top: 5%;
-            }
-        }
-
-        @media screen and (max-width: 683px) {
-            .about-us {
-                top: 4.7%;
-            }
-        }
-
-        @media screen and (max-width: 637px) {
-            .about-us {
-                display: none;
-            }
-        }
-
-        .get-a-quote {
-            color: white;
-            position: fixed;
-            top: 4%;
-            right: 10%;
-            z-index: 5;
-            margin-right: 2%;
-            margin-left: 2%;
-        }
-
-        @media screen and (max-width: 1382px) {
-            .get-a-quote {
-                top: 6.5%;
-            }
-        }
-
-        @media screen and (max-width: 1160px) {
-            .get-a-quote {
-                top: 5.5%;
-            }
-        }
-
-        @media screen and (max-width: 1020px) {
-            .get-a-quote {
-                top: 5%;
-            }
-        }
-
-        @media screen and (max-width: 910px) {
-            .get-a-quote {
-                top: 4.5%;
-            }
-        }
-
-        @media screen and (max-width: 793px) {
-            .get-a-quote {
-                font-size: 90%;
-                top: 5%;
-            }
-        }
-
-        @media screen and (max-width: 683px) {
-            .get-a-quote {
-                top: 4.7%;
-            }
-        }
-
-        @media screen and (max-width: 637px) {
-            .get-a-quote {
-                display: none;
-            }
-        }
-
-        .web-img {
-            position: absolute;
-            top: 13%;
-            left: -1%;
-            z-index: 1;
-        }
-
-        .div-for-text-img {
+        #mesfimg {
+            display: none;
             width: 50%;
-            color: white;
             position: absolute;
-            right: 12%;
-            top: 49.5%;
-            font-size: 220%;
-            z-index: 2;
-        }
-
-        @media screen and (max-width: 1238px) {
-            .div-for-text-img {
-                font-size: 200%;
-            }
-        }
-
-        @media screen and (max-width: 1127px) {
-            .div-for-text-img {
-                font-size: 180%;
-            }
-        }
-
-        @media screen and (max-width: 1016px) {
-            .div-for-text-img {
-                font-size: 160%;
-            }
-        }
-
-        @media screen and (max-width: 926px) {
-            .div-for-text-img {
-                top: 30%;
-            }
-        }
-
-        @media screen and (max-width: 906px) {
-            .div-for-text-img {
-                font-size: 140%;
-            }
-        }
-
-        @media screen and (max-width: 794px) {
-            .div-for-text-img {
-                font-size: 120%;
-            }
-        }
-
-        @media screen and (max-width: 683px) {
-            .div-for-text-img {
-                font-size: 110%;
-            }
-        }
-
-        @media screen and (max-width: 627px) {
-            .div-for-text-img {
-                font-size: 100%;
-            }
-        }
-
-        @media screen and (max-width: 572px) {
-            .div-for-text-img {
-                top: 25%;
-                left: 20%;
-                width: 60%;
-                font-size: 110%;
-            }
-        }
-
-        @media screen and (max-width: 525px) {
-            .div-for-text-img {
-                font-size: 100%;
-            }
-        }
-
-        .div-for-about-us {
-            width: 55%;
-            color: rgb(53, 53, 53);
-            background-color: rgb(255, 255, 255);
-            padding-left: 23%;
-            padding-right: 23%;
-            padding-bottom: 8%;
-            padding-top: 5%;
-            font-size: 110%;
-            position: absolute;
-            top: 140%;
-            left: -1%;
-            text-align: center;
-            z-index: 3;
-        }
-
-        @media screen and (max-width: 1520px) {
-            .div-for-about-us {
-                top: 130%;
-            }
-        }
-
-        @media screen and (max-width: 1401px) {
-            .div-for-about-us {
-                top: 120%;
-            }
-        }
-
-        @media screen and (max-width: 1284px) {
-            .div-for-about-us {
-                top: 110%;
-            }
-        }
-
-        @media screen and (max-width: 1164px) {
-            .div-for-about-us {
-                top: 100%;
-            }
-        }
-
-        @media screen and (max-width: 1048px) {
-            .div-for-about-us {
-                top: 90%;
-            }
-        }
-
-        @media screen and (max-width: 926px) {
-            .div-for-about-us {
-                position: absolute;
-                width: 75%;
-                top: 75%;
-                padding-left: 13%;
-                padding-right: 13%;
-                padding-bottom: 9%;
-            }
-        }
-
-        @media screen and (max-width: 810px) {
-            .div-for-about-us {
-                top: 65%;
-            }
-        }
-
-        @media screen and (max-width: 633px) {
-            .div-for-about-us {
-                top: 60%;
-            }
-        }
-
-        @media screen and (max-width: 571px) {
-            .div-for-about-us {
-                top: 55%;
-            }
-        }
-
-        @media screen and (max-width: 512px) {
-            .div-for-about-us {
-                top: 50%;
-            }
-        }
-
-
-        .div-for-why-us-box {
-            width: 20%;
-            color: white;
-            background-color: rgb(53, 53, 53);
-            padding-left: 2%;
-            padding-right: 2%;
-            padding-bottom: 1%;
-            font-size: 100%;
-            position: absolute;
-            top: 225%;
-            left: 10%;
-            text-align: center;
-            border-radius: 15px;
-        }
-
-        @media screen and (max-width: 1502px) {
-            .div-for-why-us-box {
-                padding-bottom: 1.6%;
-                top: 219%;
-            }
-        }
-
-        @media screen and (max-width: 1482px) {
-            .div-for-why-us-box {
-                padding-bottom: 1%;
-                top: 217%;
-            }
-        }
-
-        @media screen and (max-width: 1407px) {
-            .div-for-why-us-box {
-                padding-bottom: 0%;
-            }
-        }
-
-        @media screen and (max-width: 1401px) {
-            .div-for-why-us-box {
-                top: 200%;
-            }
-        }
-
-        @media screen and (max-width: 1347px) {
-            .div-for-why-us-box {
-                padding-bottom: 1%;
-                top: 205%;
-            }
-        }
-
-        @media screen and (max-width: 1288px) {
-            .div-for-why-us-box {
-                padding-bottom: 1.9%;
-            }
-        }
-
-        @media screen and (max-width: 1284px) {
-            .div-for-why-us-box {
-                position: absolute;
-                top: 192%;
-            }
-        }
-
-        @media screen and (max-width: 1259px) {
-            .div-for-why-us-box {
-                padding-bottom: 3%;
-            }
-        }
-
-        @media screen and (max-width: 1221px) {
-            .div-for-why-us-box {
-                padding-bottom: 1%;
-            }
-        }
-
-        @media screen and (max-width: 1188px) {
-            .div-for-why-us-box {
-                padding-bottom: 2%;
-            }
-        }
-
-        @media screen and (max-width: 1182px) {
-            .div-for-why-us-box {
-                padding-bottom: 1%;
-            }
-        }
-
-        @media screen and (max-width: 1164px) {
-            .div-for-why-us-box {
-                top: 186%;
-            }
-        }
-
-        @media screen and (max-width: 1141px) {
-            .div-for-why-us-box {
-                padding-bottom: 2.3%;
-                top: 187%;
-            }
-        }
-
-        @media screen and (max-width: 1128px) {
-            .div-for-why-us-box {
-                width: 30%;
-                padding-bottom: 1%;
-            }
-        }
-
-        @media screen and (max-width: 1097px) {
-            .div-for-why-us-box {
-                padding-bottom: 2.2%;
-            }
-        }
-
-        @media screen and (max-width: 1078px) {
-            .div-for-why-us-box {
-                padding-bottom: 1%;
-            }
-        }
-
-        @media screen and (max-width: 1048px) {
-            .div-for-why-us-box {
-                top: 177%;
-            }
-        }
-
-        @media screen and (max-width: 1007px) {
-            .div-for-why-us-box {
-                padding-bottom: 2.3%;
-                top: 178%;
-            }
-        }
-
-        @media screen and (max-width: 993px) {
-            .div-for-why-us-box {
-                padding-bottom: 1%;
-            }
-        }
-
-        @media screen and (max-width: 944px) {
-            .div-for-why-us-box {
-                width: 55%;
-                left: 20%;
-            }
-        }
-
-        @media screen and (max-width: 926px) {
-            .div-for-why-us-box {
-                top: 150%;
-            }
-        }
-
-        @media screen and (max-width: 810px) {
-            .div-for-why-us-box {
-                top: 145%;
-            }
-        }
-
-        @media screen and (max-width: 518px) {
-            .div-for-why-us-box {
-                padding-left: 5%;
-                padding-right: 5%;
-                left: 17%;
-            }
-        }
-
-        .div-for-the-timeline {
-            width: 20%;
-            color: white;
-            background-color: rgb(53, 53, 53);
-            padding-left: 2%;
-            padding-right: 2%;
-            padding-bottom: 1%;
-            font-size: 100%;
-            position: absolute;
-            top: 225%;
-            left: 38%;
-            text-align: center;
-            border-radius: 15px;
-        }
-
-        @media screen and (min-width: 1600px) {
-            .div-for-the-timeline {
-                padding-bottom: 2.5%;
-            }
-        }
-
-        @media screen and (max-width: 1502px) {
-            .div-for-the-timeline {
-                padding-bottom: 1.6%;
-                top: 219%;
-            }
-        }
-
-        @media screen and (max-width: 1501px) {
-            .div-for-the-timeline {
-                padding-bottom: 0%;
-                top: 217%;
-            }
-        }
-
-        @media screen and (max-width: 1482px) {
-            .div-for-the-timeline {
-                padding-bottom: 1%;
-            }
-        }
-
-        @media screen and (max-width: 1407px) {
-            .div-for-the-timeline {
-                padding-bottom: 2%;
-            }
-        }
-
-        @media screen and (max-width: 1401px) {
-            .div-for-the-timeline {
-                top: 200%;
-            }
-        }
-
-        @media screen and (max-width: 1366px) {
-            .div-for-the-timeline {
-                padding-bottom: 0%;
-            }
-        }
-
-        @media screen and (max-width: 1347px) {
-            .div-for-the-timeline {
-                padding-bottom: 1%;
-                top: 205%;
-            }
-        }
-
-        @media screen and (max-width: 1288px) {
-            .div-for-the-timeline {
-                padding-bottom: 1.9%;
-            }
-        }
-
-        @media screen and (max-width: 1284px) {
-            .div-for-the-timeline {
-                position: absolute;
-                top: 192%;
-            }
-        }
-
-        @media screen and (max-width: 1259px) {
-            .div-for-the-timeline {
-                padding-bottom: 1%;
-            }
-        }
-
-        @media screen and (max-width: 1188px) {
-            .div-for-the-timeline {
-                padding-bottom: 0%;
-            }
-        }
-
-        @media screen and (max-width: 1182px) {
-            .div-for-the-timeline {
-                padding-bottom: 1%;
-            }
-        }
-
-        @media screen and (max-width: 1164px) {
-            .div-for-the-timeline {
-                top: 186%;
-            }
-        }
-
-        @media screen and (max-width: 1141px) {
-            .div-for-the-timeline {
-                padding-bottom: 0%;
-            }
-        }
-
-        @media screen and (max-width: 1128px) {
-            .div-for-the-timeline {
-                position: absolute;
-                top: 245%;
-                width: 30%;
-                left: 33.5%;
-                padding-bottom: 1%;
-            }
-        }
-
-        @media screen and (max-width: 1048px) {
-            .div-for-the-timeline {
-                top: 240%;
-            }
-        }
-
-        @media screen and (max-width: 1007px) {
-            .div-for-the-timeline {
-                top: 240%;
-            }
-        }
-
-        @media screen and (max-width: 944px) {
-            .div-for-the-timeline {
-                width: 55%;
-                top: 272.5%;
-                left: 20%;
-            }
-        }
-
-        @media screen and (max-width: 926px) {
-            .div-for-the-timeline {
-                top: 235%;
-            }
-        }
-
-        @media screen and (max-width: 810px) {
-            .div-for-the-timeline {
-                top: 241%;
-            }
-        }
-
-        @media screen and (max-width: 606px) {
-            .div-for-the-timeline {
-                top: 251%;
-            }
-        }
-
-        @media screen and (max-width: 559px) {
-            .div-for-the-timeline {
-                top: 251%;
-            }
-        }
-
-        @media screen and (max-width: 557px) {
-            .div-for-the-timeline {
-                top: 254.5%;
-            }
-        }
-
-        @media screen and (max-width: 549px) {
-            .div-for-the-timeline {
-                top: 260%;
-            }
-        }
-
-        @media screen and (max-width: 518px) {
-            .div-for-the-timeline {
-                padding-left: 5%;
-                padding-right: 5%;
-                left: 17%;
-            }
-        }
-
-        .div-for-the-third-box {
-            width: 20%;
-            color: white;
-            background-color: rgb(53, 53, 53);
-            padding-left: 2%;
-            padding-right: 2%;
-            padding-bottom: 1%;
-            font-size: 100%;
-            position: absolute;
-            top: 225%;
+            top: 30rem;
+            z-index: 1;
+            font-size: 3.5rem;
             right: 10%;
-            text-align: center;
-            border-radius: 15px;
+            text-align: left;
         }
 
-        @media screen and (max-width: 1502px) {
-            .div-for-the-third-box {
-                padding-bottom: 0%;
-                top: 219%;
-            }
+        .about {
+            background-color: white;
+            padding-top: 5%;
+            padding-bottom: 5%;
         }
 
-        @media screen and (max-width: 1482px) {
-            .div-for-the-third-box {
-                padding-bottom: 1%;
-                top: 217%;
-            }
-        }
-
-        @media screen and (max-width: 1407px) {
-            .div-for-the-third-box {
-                padding-bottom: 2%;
-            }
-        }
-
-        @media screen and (max-width: 1401px) {
-            .div-for-the-third-box {
-                top: 200%;
-            }
-        }
-
-        @media screen and (max-width: 1347px) {
-            .div-for-the-third-box {
-                padding-bottom: 1%;
-                top: 205%;
-            }
-        }
-
-        @media screen and (max-width: 1288px) {
-            .div-for-the-third-box {
-                padding-bottom: 0%;
-            }
-        }
-
-        @media screen and (max-width: 1284px) {
-            .div-for-the-third-box {
-                position: absolute;
-                top: 192%;
-            }
-        }
-
-        @media screen and (max-width: 1259px) {
-            .div-for-the-third-box {
-                padding-bottom: 1%;
-            }
-        }
-
-        @media screen and (max-width: 1188px) {
-            .div-for-the-third-box {
-                padding-bottom: 2.5%;
-            }
-        }
-
-        @media screen and (max-width: 1183px) {
-            .div-for-the-third-box {
-                padding-bottom: 0%;
-            }
-        }
-
-        @media screen and (max-width: 1182px) {
-            .div-for-the-third-box {
-                padding-bottom: 1%;
-            }
-        }
-
-        @media screen and (max-width: 1164px) {
-            .div-for-the-third-box {
-                top: 186%;
-            }
-        }
-
-        @media screen and (max-width: 1141px) {
-            .div-for-the-third-box {
-                padding-bottom: 2.3%;
-                top: 187%;
-            }
-        }
-
-        @media screen and (max-width: 1128px) {
-            .div-for-the-third-box {
-                width: 30%;
-                padding-bottom: 1%;
-            }
-        }
-
-        @media screen and (max-width: 1048px) {
-            .div-for-the-third-box {
-                top: 177%;
-            }
-        }
-
-        @media screen and (max-width: 1097px) {
-            .div-for-the-third-box {
-                padding-bottom: 0%;
-            }
-        }
-
-        @media screen and (max-width: 1078px) {
-            .div-for-the-third-box {
-                padding-bottom: 1%;
-            }
-        }
-
-        @media screen and (max-width: 1007px) {
-            .div-for-the-third-box {
-                padding-bottom: 0%;
-                top: 178%;
-            }
-        }
-
-        @media screen and (max-width: 997px) {
-            .div-for-the-third-box {
-                padding-bottom: 1%;
-            }
-        }
-
-        @media screen and (max-width: 944px) {
-            .div-for-the-third-box {
-                width: 55%;
-                top: 225%;
-                left: 20%;
-            }
-        }
-
-        @media screen and (max-width: 926px) {
-            .div-for-the-third-box {
-                top: 192%;
-            }
-        }
-
-        @media screen and (max-width: 810px) {
-            .div-for-the-third-box {
-                top: 193%;
-            }
-        }
-
-        @media screen and (max-width: 664px) {
-            .div-for-the-third-box {
-                top: 191%;
-            }
-        }
-
-        @media screen and (max-width: 606px) {
-            .div-for-the-third-box {
-                top: 196%;
-            }
-        }
-
-        @media screen and (max-width: 597px) {
-            .div-for-the-third-box {
-                top: 196.5%;
-            }
-        }
-
-        @media screen and (max-width: 596px) {
-            .div-for-the-third-box {
-                top: 198%;
-            }
-        }
-
-        @media screen and (max-width: 559px) {
-            .div-for-the-third-box {
-                top: 198%;
-            }
-        }
-
-        @media screen and (max-width: 549px) {
-            .div-for-the-third-box {
-                top: 202.55%;
-            }
-        }
-
-        @media screen and (max-width: 522px) {
-            .div-for-the-third-box {
-                top: 204%;
-            }
-        }
-
-        @media screen and (max-width: 518px) {
-            .div-for-the-third-box {
-                padding-left: 5%;
-                padding-right: 5%;
-                left: 17%;
-            }
-        }
-
-        @media screen and (max-width: 500px) {
-            .div-for-the-third-box {
-                top: 202.5%;
-            }
-        }
-
-        .div-for-get-a-free-quote {
-            width: 101%;
-            text-align: center;
+        .center {
             color: rgb(53, 53, 53);
-            background-color: rgb(255, 255, 255);
-            padding-bottom: 9%;
-            position: absolute;
-            left: -1%;
-            top: 290%;
-            font-size: 220%;
         }
 
-        @media screen and (max-width: 1401px) {
-            .div-for-get-a-free-quote {
-                top: 265%;
-                padding-bottom: 10%;
-            }
-        }
-
-        @media screen and (max-width: 1347px) {
-            .div-for-get-a-free-quote {
-                top: 277.5%;
-            }
-        }
-
-        @media screen and (max-width: 1284px) {
-            .div-for-get-a-free-quote {
-                top: 264%;
-            }
-        }
-
-        @media screen and (max-width: 1128px) {
-            .div-for-get-a-free-quote {
-                top: 304%;
-                padding-bottom: 10%;
-            }
-        }
-
-        @media screen and (max-width: 944px) {
-            .div-for-get-a-free-quote {
-                top: 320%;
-                padding-bottom: 13%;
-            }
-        }
-
-        @media screen and (max-width: 926px) {
-            .div-for-get-a-free-quote {
-                top: 280%;
-            }
-        }
-
-        @media screen and (max-width: 810px) {
-            .div-for-get-a-free-quote {
-                top: 292%;
-                padding-bottom: 16%;
-            }
-        }
-
-        @media screen and (max-width: 615px) {
-            .div-for-get-a-free-quote {
-                padding-bottom: 19%;
-            }
-        }
-
-        @media screen and (max-width: 606px) {
-            .div-for-get-a-free-quote {
-                top: 305%;
-            }
-        }
-
-        @media screen and (max-width: 557px) {
-            .div-for-get-a-free-quote {
-                top: 315%;
-                padding-bottom: 22%;
-            }
-        }
-
-        @media screen and (max-width: 507px) {
-            .div-for-get-a-free-quote {
-                top: 325%;
-                padding-bottom: 27%;
-            }
-        }
-
-        .div-for-that-quote {
-            position: absolute;
-            top: 310%;
-            color: white;
-            text-decoration: none;
+        .content-a, .content-b, .content-c {
+            display: inline-block;
             background-color: rgb(53, 53, 53);
-            padding-left: 1%;
-            padding-right: 1%;
-            left: 45%;
-            border-radius: 15px;
+            padding: 20px;
+            margin: 1%;
+            width: 20%;
+            min-width: 70%;
         }
 
-        @media screen and (max-width: 1401px) {
-            .div-for-that-quote {
-                top: 285%;
+        @media screen and (min-width: 1056px) {
+            .content-a, .content-b, .content-c {
+                min-width: 50%;
             }
         }
 
-        @media screen and (max-width: 1347px) {
-            .div-for-that-quote {
-                top: 297.5%;
+        @media screen and (min-width: 1354px) {
+            .content-a, .content-b, .content-c {
+                min-width: 30%;
             }
         }
 
-        @media screen and (max-width: 1284px) {
-            .div-for-that-quote {
-                top: 284%;
-            }
+        .booboo {
+            max-width: 1500px;
+            max-height: 1000px;
         }
 
-        @media screen and (max-width: 1128px) {
-            .div-for-that-quote {
-                top: 324%;
-            }
+        .three {
+            background-color: grey;
+            padding-top: 3%;
+            padding-bottom: 3%;
         }
 
-        @media screen and (max-width: 944px) {
-            .div-for-that-quote {
-                top: 341%;
-            }
-        }
-
-        @media screen and (max-width: 926px) {
-            .div-for-that-quote {
-                top: 301%;
-            }
-        }
-
-        @media screen and (max-width: 810px) {
-            .div-for-that-quote {
-                top: 313%;
-            }
-        }
-
-        @media screen and (max-width: 606px) {
-            .div-for-that-quote {
-                top: 326%;
-            }
-        }
-
-        @media screen and (max-width: 557px) {
-            .div-for-that-quote {
-                top: 336%;
-            }
-        }
-
-        @media screen and (max-width: 507px) {
-            .div-for-that-quote {
-                top: 346%;
-            }
-        }
-
-        a {
-            color: white;
-            text-decoration: none;
-        }
-
-        #bigger-about-us {
-            font-size: 220%;
-        }
-
-        .site-footer {
-            position: absolute;
-            left: 5%;
-            top: 317%;
-            color: rgb(53, 53, 53);
-            z-index: 4;
-        }
-
-        @media screen and (max-width: 1401px) {
-            .site-footer {
-                top: 295%;
-            }
-        }
-
-        @media screen and (max-width: 1347px) {
-            .site-footer {
-                top: 304.5%;
-            }
-        }
-
-        @media screen and (max-width: 1284px) {
-            .site-footer {
-                top: 291%;
-            }
-        }
-
-        @media screen and (max-width: 1128px) {
-            .site-footer {
-                top: 331%;
-            }
-        }
-
-        @media screen and (max-width: 944px) {
-            .site-footer {
-                top: 350%;
-            }
-        }
-
-        @media screen and (max-width: 926px) {
-            .site-footer {
-                top: 310%;
-            }
-        }
-
-        @media screen and (max-width: 810px) {
-            .site-footer {
-                top: 323%;
-            }
-        }
-
-        @media screen and (max-width: 725px) {
-            .site-footer {
-                top: 320%;
-            }
-        }
-
-        @media screen and (max-width: 606px) {
-            .site-footer {
-                top: 335%;
-            }
-        }
-
-        @media screen and (max-width: 557px) {
-            .site-footer {
-                top: 345%;
-            }
-        }
-
-        @media screen and (max-width: 507px) {
-            .site-footer {
-                top: 356%;
-            }
-        }
+		#quote {
+			color: rgb(53, 53, 53);
+			margin: 24px;
+			font-size: 350%;
+		}
+		
+		.final {
+			background-color: white;
+		}
+		
+		#footer {
+			color: rgb(53, 53, 53);
+			font-size: 90%;
+			text-align: left;
+			margin-top: 48px;
+		}
     </style>
-
 </head>
 
 <body>
-    <div class="all-all">
-        <h1 class="site-title">WebWorkXx</h1>
-        <!--menu-->
-        <div class="over-da-flow">
-            <p class="about-us"><a href="#bigger-about-us">About Us</a></p>
-            <p class="get-a-quote"><a href="#getaquote">Get A quote</a></p>
+    <h2 id="mesfimg">Helping Your Company Grow To Its Potential</h2>
+    <div class="img">
+        <img src="webimg.jpg" alt="night sky with mountain in the background" width="100%">
+    </div>
+
+    <div class="container about">
+        <div class="wrapper">
+            <div class="grid">
+                <div class="col center">
+                    <h2 id="aus">About Us</h2>
+                    <p>We are WebWorkXx. Our mission here is to help you create the best website for your company needs.
+                        We offer beautiful, advanced websites with the purpose of putting you, the client, first. We
+                        offer simply the best websites for an affordable price. Our team here is dedicated to completing
+                        your project as fast as we can, while still creating the perfect fit for you. If you want a
+                        website for your company, you can request a free quote, so that you can tell us all about what
+                        you are looking for in a website. After you submit what your looking for, you can be sure that
+                        one of our team members will get back to you as soon as possable.</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!--img-->
-    <div class="web-img">
-        <img src="webimg.jpg" alt="Night sky with a mountain in the background" width="100%">
+    <div class="container three">
+        <div class="wrapper booboo">
+            <div class="grid threebythree">
+                <div class="col content-a"><h2>Why Us?</h2><p>Why should you choose us for your website? Our websites are engineered to offer the best possible experience, for you, an for your clients, so that you never loose any traffic with a bad website. Our websites offer a responsive design, so that your website will work on any device, no matter how big, or how small the screen size. So that you never loose touch with what matters the most. </p></div> <div class="col content-b"><h2>The Timeline</h2><p>So, then, what is the timeline? you might ask. Well when you request a free quote, one of our team members will get back to you as fast as they can. After that you will get an email with the estimated work required, and an estimation of the time required, while still trying to keep the dead-line you set. After that you can expect about 3 days of work depending on the complexity of your site. </p></div> <div class="col content-c"><h2>What Languages?</h2><p>Here at WebWorkXx we create the best websites for you, and that means we have to use a language that is reliable, fast, and secure. So we use 3 languages. The first is <ins>HTML</ins>, for the framework of the website. The second is <ins>CSS</ins>, this is used for the style of the website, to make it look the best for you. And the third is <ins>JAVA SCRIPT</ins>, for the animation of a website, like making a paragraph slide in. </p></div>
+            </div>
+        </div>
     </div>
 
-    <!--text for img-->
-    <div class="div-for-text-img">
-        <h2 id="helpingg">Helping Your Company Grow To Its Potential</h2>
-    </div>
-
-    <!--About us section-->
-    <div class="div-for-about-us">
-        <h2 id="bigger-about-us">About Us</h2>
-        <p>We are WebWorkXx. Our mission here is to help you create the best website for your company needs. We offer
-            beautiful, advanced websites with the purpose of putting you, the client, first. We offer simply the best
-            websites for an affordable price. Our team here is dedicated to completing your project as fast as we can,
-            while
-            still creating the perfect fit for you. If you want a website for your company, you can request a free
-            quote, so
-            that you can tell us all about what you are looking for in a website. After you submit what your looking
-            for,
-            you can be sure that one of our team members will get back to you as soon as possable.</p>
-    </div>
-
-    <!--3 boxes-->
-    <div class="div-for-why-us-box">
-        <h2>Why Us?</h2>
-        <p>
-            Why should you choose us for your website? Our websites are engineered to offer the best possible
-            experience,
-            for you, an for your clients, so that you never loose any traffic with a bad website. Our websites offer a
-            responsive design, so that your website will work on any device, no matter how big, or how small the screen
-            size. So that you never loose touch with what
-            matters the most.
-        </p>
-    </div>
-    <!-- the second box of 3, the timeline -->
-    <div class="div-for-the-timeline">
-        <h2>The Timeline</h2>
-        <p>
-            So, then, what is the timeline? you might ask. Well when you request a free quote, one of our team members
-            will
-            get back to you as fast as they can. After that you will get an email with the estimated work required, and
-            an
-            estimation of the time required, while still trying to keep the dead-line you set. After that you can expect
-            about 3 days of work depending on the complexity of your site.
-        </p>
-    </div>
-
-    <div class="div-for-the-third-box">
-        <h2>What Languages?</h2>
-        <p>
-            Here at WebWorkXx we create the best websites for you, and that means we have to use a language that is
-            reliable, fast, and secure. So we use 3 languages. The first is HTML, for the framework of the website. The
-            second is CSS, this is used for the style of the website, to make it look the best for you. And the third is
-            JAVA SCRIPT, for the animation of a website, like making a paragraph slide in.
-        </p>
-    </div>
-
-    <div class="div-for-get-a-free-quote">
-        <h2>Get A Free Quote!</h2>
-    </div>
-
-    <!-- Botton for the quote -->
-    <div class="div-for-that-quote">
-        <p id="getaquote"><a href="">Request a Quote</a></p>
-    </div>
-
-    <h5 class="site-footer">Copyright © 2019 WebWorkXx - Web Designer, and Web Devoloper</h5>
+<div class="container final">
+	<div class="wrapper">
+		<div class="grid">
+		<h2 id="quote">Get A Free Quote!</h2>
+			<div class="button">
+			<p id="last"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeYdrZHtjAXxEc5t_TSqYidV1PdvShWaro5BJepsGVQNrKbyQ/viewform">Get A Quote</a></p>
+			</div>
+			<p id="footer">Copyright © 2019 WebWorkXx - Web Designer, and Web Devoloper</p>
+		</div>
+	</div>
+</div>
 
 </body>
 
