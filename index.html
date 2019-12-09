@@ -9,9 +9,7 @@
             <meta name="description=" content="WebWorkXx - Web designer and builder. We are WebWorkXx. Our mission here is to help you create the best website for your company needs. We offer beautiful, advanced websites with the purpose of putting you, the client, first. We offer simply the best websites for an affordable price. Our team here is dedicated to completing your project as fast as we can, while still creating the perfect fit for you.">
             <meta name="google-site-verification" content="mNNGOIMIylS6yUpyOhu8wGL0q5N955L-hWlkRf12yxI" />
         <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-	
-	
-	<style>
+<style>
         body {
             background-color: white;
             color: white;
@@ -27,6 +25,12 @@
 			margin: 24px;
 			padding: 1%;
 		}
+
+        @media screen and (max-width: 587px) {
+            .butt {
+                padding: 2%;
+            }
+        }
 
         h1,
         h2,
@@ -59,11 +63,11 @@
         }
 
         p {
-            font-size: 2.6vh;
+            font-size: 120%;
         }
 
         #mesfimg {
-            width: 50%;
+            width: 500px;
             position: absolute;
             top: 30rem;
             font-size: 3.5rem;
@@ -87,8 +91,14 @@
             background-color: rgb(53, 53, 53);
             padding: 20px;
             margin: 1%;
-            width: 300px;
+            width: 310px;
             max-width: 90%;
+        }
+
+        @media screen and (max-width: 798px) {
+            .content-a, .content-b, .content-c {
+                max-width: 85%;
+            }
         }
 
         .booboo {
@@ -106,6 +116,12 @@
 			margin: 24px;
 			font-size: 350%;
 		}
+
+        @media screen and (max-width: 587px) {
+            #quote {
+                font-size: 250%;
+            }
+        }
 		
 		.final {
 			background-color: white;
@@ -124,6 +140,15 @@
             float: left;
             padding: 30px 0;
             margin-left: 48px;
+        }
+
+        @media screen and (max-width: 798px) {
+            #the-title {
+                float: none;
+                margin-right: auto;
+                margin-left: auto;
+                padding: 15px 0;
+            }
         }
 
         header {
@@ -173,6 +198,18 @@
 
         nav a:hover::before {
             width: 100%;
+        }
+
+        @media screen and (max-width: 798px) {
+            nav {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 798px) {
+            header {
+                position: relative;
+            }
         }
     </style>
 </head>
