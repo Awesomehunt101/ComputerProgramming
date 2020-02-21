@@ -212,10 +212,43 @@
             }
         }
 
+        #test {
+            display: none;
+        }
+
         @media screen and (max-width: 798px) {
-            header {
-                position: relative;
+            #test {
+                display: inline;
+                background-color: white;
+                padding: 2px;
+                border-radius: 10px;
+                position: absolute;
+                top: 30%;
+                right: 10%;
             }
+        }
+
+        .da-container {
+            display: none;
+            width: 100%;
+        }
+
+        .da-wrapper {
+            width: 60%;
+            background-color: rgb(53, 53, 53);
+            padding-bottom: 10%;
+        }
+        .da-grid {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        #cool-guy-two {
+            margin-top: 80px;
+        }
+
+        #cool-guy-one {
+            padding-top: 80px;
         }
     </style>
     
@@ -234,8 +267,19 @@
                 </ul>
             </nav>
 
+            <p id="test">hee</p>
+
         </div>
     </header>
+
+    <div class="da-container">
+        <div class="da-wrapper">
+            <div class="da-grid">
+                <h2 id="cool-guy-one"><a href="#location-one">About Us</a></h2>
+                <h2 id="cool-guy-two"><a href="#quote">Get A Quote</a></h2>
+            </div>
+        </div>
+    </div>
 
     <h2 id="mesfimg">Helping Your Company Grow To Its Potential</h2>
     <div class="img">
